@@ -1,0 +1,187 @@
+tr:hover{
+    background-color: antiquewhite;
+}
+body{
+    font-family: 'Century Gothic';
+    margin:0;
+    
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.first::first-letter{
+    font-weight: bold;
+    font-size: 2em;
+}
+.topnav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: #362417;
+}
+.topnav a{
+    color: #ffffff;
+    float: left;
+    display: black;
+    text-decoration: none;
+    text-align: left;
+    padding: 14px 16px;
+}
+.topnav a:hover{
+    color: #F1DABF;
+    text-decoration: none;
+    background-color: rgb(146, 129, 122, 30%)
+}
+.topnav_right{
+    float: right;
+}
+.header{
+    /* background-color: #94827ae6; */
+    background-image: url(images/banner.png);
+    padding: 20px;
+    text-align: left;
+    height: auto;
+}
+.pass{
+    background-image: url(images/Head.png);
+    background-size: cover;
+    padding: 10px;
+    padding-left: 120px;
+    background-size: cover;
+}
+.topic{
+    background-image: url(images/Head.png);
+    background-size: cover;
+    padding-top: 20px; 
+    padding-left: 10px;
+    height: 60px; 
+    background-size: cover;
+}
+.row::after{    
+    content: "";
+    display: block;
+    clear: both;
+}
+.content_row{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.content{
+    float: left;
+    width: 60%;
+    padding: 15px;
+}
+.side{
+    float: right;  
+    width: 45%;
+    height: auto;
+    padding: 15px;
+    background-color: #7567616c;
+}
+.imgs{
+    position: absolute;
+    float: right; 
+    right: 0px;   
+    width: auto;
+    height: auto;
+    padding: 15px;
+    background-color: transparent;
+}
+label{
+    color: #362417;
+    position: relative;
+    float: left;
+    right: -30px;
+    width: 70%;   
+    
+}
+input{
+    background-color: rgb(255, 255, 255, 50%);
+    border-width: 1px;
+    border-color: rgb(54, 36, 23, 70%);
+    border-radius: 4px;
+    font-family: 'Century Gothic';
+    color: #362417;
+    position: relative;
+    float: left;
+    left: 100px;
+    width: 35%;
+    margin: 5px 5px;
+    padding: 7px 15px;
+}
+/*
+input{
+    background-color: rgb(255, 255, 255, 50%);
+    border-width: 1px;
+    border-color: rgb(54, 36, 23, 70%);
+    border-radius: 4px;
+    font-family: 'Century Gothic';
+    color: #362417;
+    position: relative;
+    float: left;
+    left: 100px;
+    right: -200px;
+    width: 35%;
+    margin: 5px 5px;
+    padding: 7px 15px;
+}
+*/
+.button{
+    position: relative;
+    font-family: 'Century Gothic';
+    background-color: rgb(159, 146, 138);
+    border-width: 1px;
+    border-radius: 4px;
+    width: 115px;
+    cursor: pointer;
+}
+.button:hover {
+    color: #000000;
+    text-decoration: none;
+    background-color: rgb(132, 116, 110)
+}
+.blogs{
+    position: relative;
+    font-family: 'Century Gothic';
+    background-color: transparent;
+    border: transparent;
+    top: 7px;
+    width: 100px;
+    cursor: pointer;
+}
+.blogs:hover {
+    color: #ff0000;
+}
+.footer{
+    position: relative;
+    
+    bottom: -500px;
+    color:rgb(255, 255, 255, 60%);
+    background-color: #362417;
+    text-align: right;
+    padding: 1px;
+}
+.hov{
+    color: #000000;
+}
+.hov:hover{
+    color: rgb(117, 103, 98);
+}
+
+@media screen {
+    .topnav{
+        width: 100%
+    }
+}
+@media screen and (max-width: 500px) {
+    .side{
+        width: 100%
+    }
+}
+@media screen  and (max-width: 1200px)  {
+    .imgs{
+        position: relative;
+    }
+}
