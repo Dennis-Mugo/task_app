@@ -40,7 +40,7 @@
     </div>
     <div>
         &nbsp &nbsp
-        <a href="blog2.html" class="hov">Previous</a>
+        <a href="blog2.php" class="hov">Previous</a>
     </div>
     <div class="footer">
         <p>copyright &copy JustBeth &nbsp</p>

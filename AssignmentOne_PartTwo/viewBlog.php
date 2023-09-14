@@ -24,9 +24,9 @@
             <hr>
             <p>Here in this page you can sellect among the different blogs that I have published in this website</p>
             <ul style="font-size: large;">
-                <li><a href="blog1.html" class="hov">All About Us</a></li>
-                <li><a href="blog2.html" class="hov">A Day in a Life</a></li>
-                <li><a href="blog3.html" class="hov">If All were One</a></li>
+                <li><a href="blog1.php" class="hov">All About Us</a></li>
+                <li><a href="blog2.php" class="hov">A Day in a Life</a></li>
+                <li><a href="blog3.php" class="hov">If All were One</a></li>
             </ul>
 
         </div>

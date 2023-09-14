@@ -41,8 +41,8 @@
     </div>
     <div>
         &nbsp &nbsp
-        <a href="blog1.html" class="hov">Previous</a> |
-        <a href="blog3.html" class="hov">Next</a>
+        <a href="blog1.php" class="hov">Previous</a> |
+        <a href="blog3.php" class="hov">Next</a>
     </div>
     <div class="footer">
         <p>copyright &copy JustBeth &nbsp</p>
