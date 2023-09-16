@@ -1,0 +1,3 @@
+[submodule "AssignmentOne_PartOne/mailer/PHPMailer"]
+	path = AssignmentOne_PartOne/mailer/PHPMailer
+	url = https://github.com/PHPMailer/PHPMailer.git
