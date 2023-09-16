@@ -12,7 +12,7 @@
 <body>
 
     <?php
-    include_once "nav.php";
+    include_once "navFirst.php";
     ?>
     <div class="header">
         <h1><br>Create Account</h1>
@@ -20,7 +20,7 @@
     <br>
 
     <!-- <form action="Post-Query/insert.php" method="POST" autocomplete="off"> -->
-    <form action="Post-Query/insert.php" method="POST" autocomplete="on">
+    <form action="Post-Query/signUp_Process.php" method="POST" autocomplete="on">
         
         <label>Full Name</label>
         <input type="text" name="FullName" placeholder="Please Enter Your Full Name" /><br>
@@ -32,36 +32,8 @@
         <input type="password" name="Passwords" placeholder="Please Enter a Password" /><br>
         <label>Confirm Password</label>
         <input type="password" placeholder="Please Confirm the Password" />
+        <label></label>
 
-        <div>
-            <!-- 
-                <select>
-                    <option> Option 1 </option>
-                    <option> Option 2 </option>
-                </select>
-             -->
-            <!-- <select name="roleUser" required>
-                <option> --Select Roles--</option>
-
-                <?php
-                require_once "Post-Query/connection.php";
-                $sql = "SELECT * FROM Users";
-                $result = $conn->query($sql);
-
-                if ($result->num_rows > 0) {
-                    while ($row = $results->fetch_assoc()) {
-                        ?>
-                        <option value="<?php print $row["roleUser"]; ?>"> <?php print $row["role"]; ?> </option>
-
-                        <?php
-                    }
-                } else {
-                    print '<option> No results</option>';
-                }
-                ?>
-            </select> -->
-        </div>
-        
         <input type="submit" class="button" value="Register Now" />
     </form>
     </div>

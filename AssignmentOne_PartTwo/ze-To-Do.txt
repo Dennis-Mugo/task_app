@@ -1,0 +1,5 @@
+- forget.php 
+    - email sends random code to verify
+    - have a verify.php to write the code
+- figure out gow to display username on the homepage
+- contactUs.php can have email

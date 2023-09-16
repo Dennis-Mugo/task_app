@@ -12,7 +12,7 @@
 <body style="font-family: 'Century Gothic'">
     
     <?php
-     include_once "nav.php";
+     include_once "navLoged.php";
     ?>
 
     <div class="header">

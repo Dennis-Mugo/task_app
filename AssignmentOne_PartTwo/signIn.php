@@ -12,22 +12,24 @@
 <body>
     
     <?php
-     include_once "nav.php";
+     include_once "navFirst.php";
     ?>
 
     <div class="header">
         <h1><br>Login</h1>
     </div>
     <div>
-        <br>
-        <label>Email Address</label>
-        <input type="text" placeholder="Please Enter Your Email Address">
-        <br>
-        <label>Password</label>
-        <input type="password" placeholder="Please Enter Your Password">
-        <a href="forgotPass.php" class="hov" style="font-size: small;"><br><br><br><br><br>Forgot Password?</a>
-        <label></label>
-        <input type="button" class="button" value="Register Now">
+        <form action="Post-Query/signIn_Process.php" method="POST" autocomplete="on">
+            <br>
+            <label>Email Address</label>
+            <input name="Email" type="text" placeholder="Please Enter Your Email Address">
+            <br>
+            <label>Password</label>
+            <input name="Passwords" type="password" placeholder="Please Enter Your Password">
+            <a href="forgotPass.php" class="hov" style="font-size: small;"><br><br><br><br><br>Forgot Password?</a>
+            <label></label>
+            <input type="submit" class="button" value="Sign In">
+        </form>
     </div>
 
 </body>
