@@ -6,9 +6,9 @@ use PHPMailer\PHPMailer\Exception;
 //Turn on two-step verification code from email account to be used
 //Get app password for the email
 
-require './mailer/PHPMailer/src/Exception.php';
-require './mailer/PHPMailer/src/PHPMailer.php';
-require './mailer/PHPMailer/src/SMTP.php';
+require './mailer/src/Exception.php';
+require './mailer/src/PHPMailer.php';
+require './mailer/src/SMTP.php';
 class SendMail{
 	public function SendeMail($details, $conf){
 		if(!empty($details["sendToEmail"]) & !empty($details["sendToName"]) & !empty($details["emailSubjectLine"]) & !empty($details["emailMessage"])){
@@ -23,7 +23,7 @@ class SendMail{
 			$mail->Host = 'smtp.gmail.com'; //main SMTP server
 			$mail->SMTPAuth = true; //enable SMTP Authentication
 			$mail->Username = $emailFrom; //Username
-			$mail->Password = 'awdjldafizeqtvrg'; //secret password of email account
+			$mail->Password = 'ewjlabxvdlkhhexb'; //secret password of email account awdjldafizeqtvrg-Dennis
 			$mail->Port = 465;
 			$mail->SMTPSecure = 'ssl';
 			$mail->isHTML(true);
