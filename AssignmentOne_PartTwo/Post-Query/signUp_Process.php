@@ -1,23 +1,50 @@
 <?php
+
 require_once "connection.php";
 
-$Username = $_POST["Username"];
-$FullName = $_POST["FullName"];
+// using isset()
 
-$Email = $_POST["Email"];
-$Passwords = $_POST["Passwords"];
+// if(isset($_POST["Username"])){
+//     $Username = $_POST["Username"];
+// }
 
-// if (!strcmp($Passwords, $Confirm) == 0){
-//     print "Password not Matching";
-// } else {
+// if(isset($_POST["FullName"])){
+// $FullName = $_POST["FullName"];
+// }
 
-$insert_data = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$Passwords', '$Email')";
+// if(isset($_POST["Email"])){
+// $Email = $_POST["Email"];
+// }
+
+// if(isset($_POST["Passwords"])){
+// $Passwords = $_POST["Passwords"];
+// }
 
 
-if ($conn -> query($insert_data) === TRUE) {
-    header("Location: ../index.php");
-    exit();
+if (isset($_POST["Submit"])) {
+    $Username = $_POST["Username"];
+    $FullName = $_POST["FullName"];
+    $Email = $_POST["Email"];
+    $Passwords = $_POST["Passwords"];
+
+    $insert_data = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$Passwords', '$Email')";
+
+    if ($conn->query($insert_data) === TRUE) {
+        header("Location: signUp_Email.php");
+        exit();
+    } else {
+        echo $conn->connect_error;
+    }
 }
-else {
-    echo $conn -> connect_error;
+function FullName()
+{
+    global $FullName;
+    return $FullName;
 }
+function Email()
+{
+    global $Email;
+    return $Email;
+}
+
+?>

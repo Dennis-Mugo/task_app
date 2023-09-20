@@ -34,7 +34,7 @@
         <input type="password" placeholder="Please Confirm the Password" />
         <label></label>
 
-        <input type="submit" class="button" value="Register Now" />
+        <input type="submit" name="Submit" class="button" value="Register Now" />
     </form>
     </div>
 </body>

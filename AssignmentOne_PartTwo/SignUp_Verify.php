@@ -16,19 +16,20 @@
     ?>
 
     <div class="pass">
-        <h1><br>Reset Password</h1>
+        <h1><br>Enter Verification Code</h1>
     </div>
     <div>
-        <form action="forgotPassProcess.php" method="POST" autocomplete="off">
-            <br>
-            <label>Email Address</label>
-            <input name="Code" type="text" placeholder="Please Enter Your Email Address">
-            <label></label>
-            <input type="button" class="button" value="Enter">
-        </form>
+    <form action="Post-Query/signUp_ver_Process.php" method="POST" autocomplete="off">
+        <br>
+        <label>Your verification code has been sent to your email.</label>
+        <input name="Code" type="text" placeholder="Please Enter Your Verification Code">
+        <label></label>
+        <input name="Verify" type="submit" class="button" value="Enter">
         <div class="footer">
             <p>copyright &copy JustBeth &nbsp</p>
         </div>
+    </form>
+    </div>
 
 </body>
 

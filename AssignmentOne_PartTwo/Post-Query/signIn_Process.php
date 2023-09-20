@@ -32,3 +32,5 @@ if ($user_row = $users -> fetch_assoc()) {
 else {
     echo $conn -> connect_error;
 }
+
+?>
