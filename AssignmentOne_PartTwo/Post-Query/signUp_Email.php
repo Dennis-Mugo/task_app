@@ -6,9 +6,8 @@ use PHPMailer\PHPMailer\Exception;
 include_once 'signUp_Process.php';
 require_once 'PHPMailer/vendor/autoload.php';
 
-
-
-function Code() {
+function Code()
+{
     global $code;
     return $code;
 }
@@ -17,8 +16,8 @@ $code = md5($str);
 
 // $name = FullName();
 // $email = Email();
-$spot_user = "SELECT * FROM `Users`";
-$users = $conn -> query($spot_user);
+$spot_user = "SELECT * FROM `Users`;";
+$users = $conn->query($spot_user);
 
 print $name . Code();
 
@@ -37,7 +36,6 @@ try {
     $mail->setFrom($email, $name);
     $mail->addAddress($email);
     $mail->Subject = "Email Verification";
-    // $mail->Body = "Hello $name, <br>You are one step away from finishing registeration. Please <a href=\"index.php\">Click</a> to verify. ";
     $mail->Body = "Hello $name, Here is the verification code: $code";
     $mail->isHTML(true);
 
@@ -51,6 +49,3 @@ try {
 } catch (Exception $error) {
     print 'ERROR';
 }
-
-
-?>
