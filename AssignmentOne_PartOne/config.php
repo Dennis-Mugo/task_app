@@ -1,6 +1,6 @@
 <?php
 
-$conf["site_name"] = "ICS 2.2";
+$conf["site_name"] = "JustBeth";
 // $conf["au_email_address"] = "info@icsd.rochella.org";
 $conf["au_email_address"] = "dennismugo2003@gmail.com";
 
