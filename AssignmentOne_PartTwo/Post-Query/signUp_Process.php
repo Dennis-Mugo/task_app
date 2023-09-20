@@ -11,10 +11,10 @@ $Passwords = $_POST["Passwords"];
 //     print "Password not Matching";
 // } else {
 
-$insert_data = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$Passwords', '$Email')";
+$insert_data = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$Passwords', '$Email');";
 
 
-if ($conn -> query($insert_data) === TRUE) {
+if ($conn -> query($insert_data)) {
     header("Location: ../index.php");
     exit();
 }

@@ -3,8 +3,8 @@ require_once "connection.php";
 
 
 
-// $insert_data = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$Passwords', '$Email')";
-$spot_user = "SELECT * FROM `Users`";
+// $insert_data = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$Passwords', '$Email');";
+$spot_user = "SELECT * FROM `Users`;";
 $users = $conn -> query($spot_user);
 
 
