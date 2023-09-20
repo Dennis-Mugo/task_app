@@ -2,7 +2,7 @@
 
 // create the db connection
 
-$conn = new mysqli("localhost:3306", "root", "newpassword", "Users");
+$conn = new mysqli("localhost:3307", "root", "newpassword", "Users");
 
 // verify the db connection
 

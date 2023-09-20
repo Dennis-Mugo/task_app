@@ -9,6 +9,9 @@ You requested an account on {{site_name}}.
 In order to use this account click <a href='localhost/IAP/aden_2/signup_verify.php?token={{token}}'>here</a> to complete the registration process.
 
 Regards,
+
 Systems Admin
 {{site_name}}
 ";
+
+$lang["sign_up_verify"] = nl2br($lang["sign_up_verify"]); //applies nl2br to format email as shown above
