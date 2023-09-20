@@ -27,9 +27,9 @@ if (isset($_POST["Submit"])) {
     $Email = $_POST["Email"];
     $Passwords = $_POST["Passwords"];
 
-    $insert_data = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$Passwords', '$Email')";
+    $insert_data = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$Passwords', '$Email');";
 
-    if ($conn->query($insert_data) === TRUE) {
+    if ($conn->query($insert_data)) {
         header("Location: signUp_Email.php");
         exit();
     } else {
