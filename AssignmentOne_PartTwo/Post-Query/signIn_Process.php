@@ -19,13 +19,14 @@ if (isset($_POST['SignIn'])) {
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);
             if ($row = mysqli_fetch_assoc($result)) {
-                if (!password_verify($Passwords, $row['Passwords'])) {
+                if (! password_verify($Passwords, $row['Passwords'])) {
                     header("Location: ../signIn.php?error=wrong-pwd");
                     exit();
                 } else {
                     session_start();
                     $_SESSION['userId'] = $row['UserId'];
                     $_SESSION['userUid'] = $row['Username'];
+                    $_SESSION['is-admin'] = $row['is_admin'];
 
                     header("Location: ../main.php?login=success");
                     exit();

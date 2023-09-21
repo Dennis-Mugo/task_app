@@ -12,7 +12,7 @@
 <body style="font-family: 'Century Gothic'">
 
     <?php
-     include_once "navbar.php";
+    require_once "navbar.php";
     ?>
 
     <div class="header">

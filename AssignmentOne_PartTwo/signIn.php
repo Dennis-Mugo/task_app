@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    
+
     <?php
-     include_once "navFirst.php";
+    require_once "navbar.php";
     ?>
 
     <div class="header">
@@ -20,19 +20,19 @@
     </div>
     <div>
         <?php
-            if (isset($_GET['error'])) {
-                if ($_GET['error'] == "empty-fields") {
-                    echo /*html*/ '<p class="error">Fill in all fields!</p>';
-                } elseif ($_GET['error'] == "sql-error") {
-                    echo /*html*/ '<p class="error">SQL Error!</p>';
-                } elseif ($_GET['error'] == "wrong-pwd") {
-                    echo /*html*/ '<p class="error">Wrong Password!</p>';
-                } elseif ($_GET['error'] == "no-user") {
-                    echo /*html*/ '<p class="error">No User!</p>';
-                } elseif ($_GET['error'] == "form-error") {
-                    echo /*html*/ '<p class="error">No Post</p>';
-                }
+        if (isset($_GET['error'])) {
+            if ($_GET['error'] == "empty-fields") {
+                echo /*html*/'<p class="error">Fill in all fields!</p>';
+            } elseif ($_GET['error'] == "sql-error") {
+                echo /*html*/'<p class="error">SQL Error!</p>';
+            } elseif ($_GET['error'] == "wrong-pwd") {
+                echo /*html*/'<p class="error">Wrong Password!</p>';
+            } elseif ($_GET['error'] == "no-user") {
+                echo /*html*/'<p class="error">No User!</p>';
+            } elseif ($_GET['error'] == "form-error") {
+                echo /*html*/'<p class="error">No Post</p>';
             }
+        }
         ?>
     </div>
     <div>

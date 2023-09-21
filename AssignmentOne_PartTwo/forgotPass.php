@@ -12,7 +12,7 @@
 <body>
 
     <?php
-    include_once "navFirst.php";
+    require_once "navbar.php";
     ?>
 
     <div class="pass">

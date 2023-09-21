@@ -10,9 +10,9 @@
 </head>
 
 <body style="font-family: 'Century Gothic'">
-    
+
     <?php
-     include_once "navLoged.php";
+    require_once "navbar.php";
     ?>
 
     <div class="header">

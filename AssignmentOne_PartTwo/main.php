@@ -1,4 +1,4 @@
-<?php session_start()?>
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +13,7 @@
 <body style="font-family: 'Century Gothic'">
 
     <?php
-     include_once "navbar.php";
+    require_once "navbar.php";
     ?>
 
     <div class="header">

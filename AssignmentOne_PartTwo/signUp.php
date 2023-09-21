@@ -10,9 +10,8 @@
 </head>
 
 <body>
-
     <?php
-    include_once "navFirst.php";
+    require_once "navbar.php";
     ?>
     <div class="header">
         <h1><br>Create Account</h1>
