@@ -11,7 +11,7 @@ if(isset($_SESSION['userUid'])) : ?>
         <a href="profile.php">
             <?php echo $_SESSION['userUid']; ?>
         </a>
-        <a href="signIn.php">Log Out</a>
+        <a href="signOut.php">Log Out</a>
     </div>
 </div>
 
