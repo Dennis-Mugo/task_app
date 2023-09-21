@@ -14,6 +14,6 @@ if(isset($_POST["Verify"])){
     }
 
     if($VerCode == $code){
-        header("Location: ../main.php");
+        header("Location: ../index.php");
     }
 }

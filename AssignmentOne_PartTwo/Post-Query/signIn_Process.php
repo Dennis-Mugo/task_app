@@ -28,7 +28,7 @@ if (isset($_POST['SignIn'])) {
                     $_SESSION['userUid'] = $row['Username'];
                     $_SESSION['is-admin'] = $row['is_admin'];
 
-                    header("Location: ../main.php?login=success");
+                    header("Location: ../index.php?login=success");
                     exit();
                 }
             } else {

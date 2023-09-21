@@ -3,7 +3,7 @@
 if(isset($_SESSION['userUid'])) : ?>
 
 <div class="topnav">
-    <a href="main.php">Home</a>
+    <a href="/">Home</a>
     <a href="viewBlog.php">Blog</a>
     <a href="contactUs.php">Contact Us</a>
 
