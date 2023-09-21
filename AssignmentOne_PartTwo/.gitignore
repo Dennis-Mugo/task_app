@@ -1,6 +1,5 @@
 launch.json
 settings.json
 *.ENV
-myconnection.php
 vendor/
 composer.lock
