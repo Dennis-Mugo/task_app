@@ -26,7 +26,7 @@ class Values {
         return $this->code;
     }
 
-    public function sendEmail() {
+    public function sendEmail($userId) {
         $mail = new PHPMailer();
         $username = $this->getName();
         $code = $this->getCode();
@@ -48,7 +48,7 @@ class Values {
             $mail->isHTML(true);
         
             if ($mail->send()) {
-                header("Location: ../SignUp_Verify.php");
+                header("Location: ../SignUp_Verify.php?user-id='$userId'");
             } else {
                 print 'Message could not send...' . $mail->ErrorInfo;
             }
@@ -59,13 +59,13 @@ class Values {
 
     public function sendCode($userId) {
         $code = $this->getCode();
-        $sql = "INSERT into `keys` (`key`, `user_id`) values ($code, '$userId');";
+        $sql = "INSERT into `keys` (`key`, `user_id`) values ('$code', '$userId');";
         $connection = new MysqliConnection();
         $result = $connection->getConnection()->query($sql);
         if ($result) {
-            return 'Code sent';
+            return 'Code sent to db';
         } else {
-            return 'Code not sent';
+            return 'Code not sent to db';
         }
     }
 

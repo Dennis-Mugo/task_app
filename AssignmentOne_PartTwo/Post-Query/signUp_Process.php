@@ -9,16 +9,27 @@ if (isset($_POST["Submit"])) {
     $Email = $_POST["Email"];
     $Passwords = $_POST["Passwords"];
 
-    $insert_data = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$Passwords', '$Email');";
+    $hashedPasswords = password_hash($Passwords, PASSWORD_DEFAULT);
 
-    if ($con->query($insert_data)) {
+    $sql = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$hashedPasswords', '$Email');";
+
+    if ($con->query($sql)) {
+        $idSql = "SELECT * FROM Users WHERE Username = '$Username';";
+        $result = $con->query($idSql);
+        $row = $result->fetch_assoc();
+        $id = $row['id'];
+
         $str = rand();
         $code = md5($str);
         $sendEmail = new Values($FullName, $Email, $code);
-        $sendEmail->sendCode($code);
-        $sendEmail->sendEmail();
+        $sendEmail->sendCode($id);
+
+        $sendEmail->sendEmail($id);
         exit();
     } else {
         echo $con->connect_error;
     }
+} else {
+    header("Location: ../signUp.php?error=form-error");
+    exit();
 }

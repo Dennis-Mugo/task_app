@@ -1,11 +1,11 @@
 <?php
-require_once 'SignupV.php';
+require_once "myconnection.php";
 
 if(isset($_POST["Verify"])){
     $VerCode = $_POST["Code"];
     $userId = $_POST['user-id'];
 
-    $sql = "SELECT * FROM `keys` WHERE `user_id` = '$userId';";
+    $sql = "SELECT * FROM `keys` WHERE `user_id` = $userId;";
     $connection = new MysqliConnection();
     $result = $connection->getConnection()->query($sql);
     if ($result->num_rows > 0) {
@@ -14,6 +14,6 @@ if(isset($_POST["Verify"])){
     }
 
     if($VerCode == $code){
-        header("Location: index.php");
+        header("Location: ../main.php");
     }
 }
