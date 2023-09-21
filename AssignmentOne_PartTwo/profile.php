@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require_once 'autoload.php';
+session_start();
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <?php
-    require_once "navbar.php";
-    ?>
-    <h1>Profile Page</h1>
-</body>
-
-</html>
+if($_SESSION['is-admin'] == 1) {
+    $layout = new Layout();
+    $layout->adminLayout();
+    echo "Welcome Admin";
+} else {
+    $layout = new Layout();
+    $layout->defaultProfileLayout();
+    echo "Welcome User";
+}
