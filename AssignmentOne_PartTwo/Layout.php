@@ -10,7 +10,7 @@ class Layout {
                 <title>Document</title>
                 <link rel="stylesheet" href="CSS/styles.css" />
             </head>
-            <body style="font-family: 'Century Gothic'">
+            <body>
                 <?php
                 require_once "navbar.php";
                 ?>
