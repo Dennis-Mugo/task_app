@@ -40,34 +40,3 @@ if (isset($_POST['SignIn'])) {
     header("Location: ../signIn.php?error=form-error");
     exit();
 }
-
-// // $insert_data = "INSERT Users (Username, FullName, Passwords, Email) values ('$Username', '$FullName', '$Passwords', '$Email');";
-// $spot_user = "SELECT * FROM `Users`;";
-// $users = $con->query($spot_user);
-
-// // $theEmail = '';
-// // $thePass = '';
-
-// if ($user_row = $users->fetch_assoc()) {
-//     $Email = $_POST["Email"];
-//     $Passwords = $_POST["Passwords"];
-
-
-//         $theEmail = $user_row["Email"];
-//         $thePass = $user_row["Passwords"];
-
-//         if ($theEmail == $Email && $thePass == $Passwords) {
-//             header("Location: ../main.php");
-//             $displayname = $user_row["Username"];
-//             exit();
-//         }
-
-//     if ($theEmail !== $Email && $thePass !== $Passwords) {
-//         echo "AHHJOh";
-
-//         exit();
-//     }
-
-// } else {
-//     echo $con->connect_error;
-// }
