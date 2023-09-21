@@ -58,8 +58,15 @@ class forms{
       
          <form action="" method="POST">
             <div class="mb-3 form-group">
+               <label for="exampleInputEmail1">Name</label>
+               <input type="text" name="full_name" class="form-control" id="" aria-describedby="emailHelp" placeholder="Enter full name" required>
+               <br>
                <label for="exampleInputEmail1">Email address</label>
                <input type="email" name="email_address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+               <br>
+               <label for="exampleInputEmail1">Password</label>
+               <input type="password" name="pass" class="form-control" id="" aria-describedby="emailHelp" placeholder="Enter password" required>
+               <br>
                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <button type="submit" name="signup" class="btn btn-primary">Sign Up</button>

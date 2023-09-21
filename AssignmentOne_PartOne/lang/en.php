@@ -6,7 +6,7 @@ Hello {{fullname}},
 
 You requested an account on {{site_name}}.
 
-In order to use this account click <a href='localhost/IAP/aden_2/signup_verify.php?token={{token}}'>here</a> to complete the registration process.
+In order to use this account click <a href='localhost/148603/2.2/task_app/task_app/AssignmentOne_PartOne/signup_verify.php?token={{token}}'>here</a> to complete the registration process.
 
 Regards,
 
