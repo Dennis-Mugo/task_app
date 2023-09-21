@@ -19,9 +19,7 @@
     </div>
     <br>
 
-    <!-- <form action="Post-Query/insert.php" method="POST" autocomplete="off"> -->
     <form action="Post-Query/signUp_Process.php" method="POST" autocomplete="on">
-        
         <label>Full Name</label>
         <input type="text" name="FullName" placeholder="Please Enter Your Full Name" /><br>
         <label>Email Address</label>
