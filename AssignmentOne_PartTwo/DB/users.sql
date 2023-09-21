@@ -3,10 +3,10 @@ CREATE DATABASE IF NOT EXISTS `Users`;
 drop table if exists `Users`;
 CREATE TABLE IF NOT EXISTS `Users` (
     `id` int(3) NOT NULL AUTO_INCREMENT,
-	`Username` varchar(15),
+	`Username` varchar(85),
     `FullName` varchar(70),
     `Email` varchar(80),
-    `Passwords` varchar(20),
+    `Passwords` varchar(30),
     `is_admin` tinyint(1) NOT NULL DEFAULT 0,
     PRIMARY KEY (`id`)
 );
