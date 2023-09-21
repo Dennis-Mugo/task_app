@@ -1,3 +1,11 @@
+<?php
+session_start();
+require_once 'autoload.php';
+if (! isset($_SESSION['userUid'])) {
+    $layout = new Layout();
+    $layout->defaultLayout();
+} else { ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,3 +50,6 @@
 </body>
 
 </html>
+<?php
+}
+?>
