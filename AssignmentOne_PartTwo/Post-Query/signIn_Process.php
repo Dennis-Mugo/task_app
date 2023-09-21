@@ -24,7 +24,7 @@ if (isset($_POST['SignIn'])) {
                     exit();
                 } else {
                     session_start();
-                    $_SESSION['userId'] = $row['UserId'];
+                    $_SESSION['userId'] = $row['id'];
                     $_SESSION['userUid'] = $row['Username'];
                     $_SESSION['is-admin'] = $row['is_admin'];
 
