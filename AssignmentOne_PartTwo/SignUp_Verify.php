@@ -23,7 +23,7 @@
         <br>
         <label>Your verification code has been sent to your email.</label>
         <input name="Code" type="text" placeholder="Please Enter Your Verification Code">
-        <label></label>
+        <input type="hidden" name="user-id" value="<?php echo $_GET['user-id'];?>">
         <input name="Verify" type="submit" class="button" value="Enter">
         <div class="footer">
             <p>copyright &copy JustBeth &nbsp</p>
