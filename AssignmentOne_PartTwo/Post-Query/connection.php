@@ -2,12 +2,12 @@
 
 // create the db connection
 
-$conn = new mysqli("localhost:3307", "root", "newpassword", "Users");
+$con = new mysqli("localhost:3307", "root", "newpassword", "Users");
 
 // verify the db connection
 
-if ($conn -> connect_error){
-    die("Connection failed" . $conn -> connect_error);
+if ($con -> connect_error){
+    die("Connection failed" . $con -> connect_error);
 }
 else {
     print "Connection Successful";
