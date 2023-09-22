@@ -27,6 +27,9 @@ class Layout
                     <h1 class="topic">Please Login to Access Reading Content!</h1>
                     <hr>
                     <h3>If you don't have an account, you can always sign up. </h3>
+                    <h3>To view the list of users, please sign in using the following email and password</h3>
+                    <li>Email: JerryMouse@cheese.com</li>
+                    <li>Password: pass</li>
                 </div>
             </div>
             <div class="footer">
@@ -91,7 +94,7 @@ class Layout
                                         <?php echo $row['is_admin'] ?>
                                     </td>
                                 </tr>
-                            <?php
+                                <?php
                             }
                         }
                         ?>
@@ -164,7 +167,7 @@ class Layout
                                         <?php echo $row['is_admin'] ?>
                                     </td>
                                 </tr>
-                            <?php
+                                <?php
                             }
                         }
                         ?>
