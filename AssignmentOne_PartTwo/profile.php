@@ -1,6 +1,6 @@
 <?php
 require_once 'autoload.php';
-require_once 'Post-Query/myconnection.php';
+require_once 'Post-Query/myconnectionForProfile.php';
 
 session_start();
 
