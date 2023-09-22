@@ -66,11 +66,11 @@ class Layout
                 <div class="content">
                     <table>
                         <caption>List of Users</caption>
-                        <th>
-                        <td>Username</td>
-                        <td>Email</td>
-                        <td>is_admin</td>
-                        </th>
+                        <th></th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>is_admin</th>
+                        
                         <?php
                         //get users from table
                         $sql = "SELECT * FROM `Users`;";

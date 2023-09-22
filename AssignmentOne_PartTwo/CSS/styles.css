@@ -1,5 +1,20 @@
-tr:hover{
-    background-color: antiquewhite;
+
+table{
+    border: solid 1px black;
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    border: solid 1px black;
+    text-align: left;
+    padding: 5px;
+}
+th{
+    background-color: #523927;
+    color: #ffffffd8;
+    border: solid 1px black;
+    text-align: left;
+    padding: 5px;
 }
 body{
     font-family: 'Century Gothic';
