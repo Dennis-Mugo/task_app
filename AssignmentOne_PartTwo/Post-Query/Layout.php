@@ -1,18 +1,15 @@
 <?php
 class Layout
 {
-    public function defaultLayout()
-    {
+    public function defaultLayout() {
         ?>
         <!DOCTYPE html>
         <html lang="en">
 
         <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
-            <link rel="stylesheet" href="CSS/styles.css" />
+            <?php
+            require_once "aDoc.php"
+                ?>
         </head>
 
         <body>
@@ -40,19 +37,15 @@ class Layout
         </html>
         <?php
     }
-
-    public function adminLayout($conn)
-    {
+    public function adminLayout($conn) {
         ?>
         <!DOCTYPE html>
         <html lang="en">
 
         <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
-            <link rel="stylesheet" href="CSS/styles.css" />
+            <?php
+            require_once "aDoc.php"
+            ?>
         </head>
 
         <body>
@@ -70,7 +63,7 @@ class Layout
                         <th>Username</th>
                         <th>Email</th>
                         <th>is_admin</th>
-                        
+
                         <?php
                         //get users from table
                         $sql = "SELECT * FROM `Users`;";
@@ -109,20 +102,16 @@ class Layout
         </html>
         <?php
     }
-    public function defaultProfileLayout($conn)
-    {
+    public function defaultProfileLayout($conn) {
         $signedInUserId = $_SESSION['userId'];
         ?>
         <!DOCTYPE html>
         <html lang="en">
 
         <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>
-                <?php echo $_SESSION['userUid']; ?>
-            </title>
-            <link rel="stylesheet" href="CSS/styles.css" />
+            <?php
+            require_once "aDoc.php"
+            ?>
         </head>
 
         <body>
@@ -139,11 +128,10 @@ class Layout
                 <div>
                     <table>
                         <caption>User Data</caption>
-                        <th>
-                        <td>Username</td>
-                        <td>Email</td>
-                        <td>is_admin</td>
-                        </th>
+                        <th></th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>is_admin</th>
                         <?php
                         //get users from table
                         $sql = "SELECT * FROM `Users` where  $signedInUserId=`id` ;";
