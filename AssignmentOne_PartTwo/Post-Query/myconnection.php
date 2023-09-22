@@ -1,7 +1,7 @@
 <?php
 
 // create the db connection
-require_once 'C:\Users\maya1\Desktop\webdev\IAP\tonne_php\AssignmentOne_PartTwo\vendor\autoload.php';
+require_once '..\vendor\autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
