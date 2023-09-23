@@ -25,8 +25,10 @@ class Layout
                     <hr>
                     <h3>If you don't have an account, you can always sign up. </h3>
                     <h3>To view the list of users, please sign in using the following email and password</h3>
-                    <li>Email: JerryMouse@cheese.com</li>
-                    <li>Password: pass</li>
+                    <ul>
+                        <li>Email: JerryMouse@cheese.com</li>
+                        <li>Password: pass</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer">
